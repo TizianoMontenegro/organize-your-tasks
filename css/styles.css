@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    margin: 0;
+}
+#wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: aqua;
+    width: 100%;
+    height: 60px;
+}
+.title{
+    margin: 0 0 0 1em;
+}
+
+.todo{
+    background-color: purple;
+    margin: 2em 0 0 2em;
+}
+.form__todo{
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+
+    width: 250px;
+    padding: 1em;
+
+    background-color: orange;
+}
+.input{
+    height: 30px;
+}
+.input__title{}
+.input__description{
+    resize: none;
+    height: 100px;
+}
