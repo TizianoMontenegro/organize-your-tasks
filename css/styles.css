@@ -22,9 +22,18 @@ body{
     margin: 0 0 0 1em;
 }
 
+
+.main{
+    margin: 2em 0 0 2em;
+    display: flex;
+    gap: .8em;
+    flex-wrap: wrap;
+
+    /* width: min-content; */
+    background-color: yellowgreen;
+}
 .todo{
     background-color: purple;
-    margin: 2em 0 0 2em;
 }
 .form__todo{
     display: flex;
@@ -43,4 +52,27 @@ body{
 .input__description{
     resize: none;
     height: 100px;
+}
+
+#tasks{
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    padding: 1em;
+    background-color: #0aa;
+}
+.card__tasks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: min-content;
+}
+.card__tasks p{
+    margin: 0;
+}
+#remove{
+    background-color: #f00;
+    border: none;
+    padding: .3em .8em;
+    margin-left: 1em;
 }
