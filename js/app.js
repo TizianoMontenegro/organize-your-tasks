@@ -18,7 +18,12 @@ function setTasks(e){
         tasks.push(task);
         localStorage.setItem("tasks",JSON.stringify(tasks));
     }
+    if(document.getElementById("input__title").length <= 2 || document.getElementById("input__description").length <= 2){
+        alert("hola")
+    }
 
+    document.getElementById("input__title").value = "";
+    document.getElementById("input__description").value = "";
     getTasks();
 };
 function getTasks(){
